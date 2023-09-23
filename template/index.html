@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    {%block head%}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SkipScam</title>
+    <link rel="icon" type="image/x-icon" href="/static/logo.png">
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Myeongjo&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body{
+    background-color:white ;
+      }
+      .first{
+        display: flexbox;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 90vh;
+        height: 90vh;
+      }
+      h1{
+        color:white;
+        font-family: 'Nanum Myeongjo', serif;
+font-family: 'Playfair Display', serif;
+      }
+      p{
+        color:black;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+ 
+      }
+      .container1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+      }
+      .hero{
+        background: linear-gradient(300deg,#2E3B4B,#DBE2EA,#6C7480);
+        background-size: 180% 180%;
+        animation:gradient-animation 10s ease infinte;
+        height: 100vh;
+ 
+      }
+      img{
+        border-radius: 5%;
+      }
+      .container2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap:30px;
+ 
+      }
+      .grid-item1{
+        grid-column-start: 2;
+      }
+      .grid-item2{
+        grid-column-start: 3;
+      }
+      /* .about{
+        display:flexbox;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      } */
+      .container2>div>p{
+        font-size: 20px;
+      }
+ 
+      .second{
+        padding-top: 20px;
+        padding-left: 20px;
+      }
+ 
+    </style>
+  {%endblock%}
+  {%block body%}
+    <section class="hero">
+ 
+ 
+   </div>
+   <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3"><img src="/static/logo.png" height="60"/>SkipScam</h1>
+ 
+        <p>Detect fake profiles on your own!</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <h3 style="color:black">Enter Your Username</h3>
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" method="POST">
+          <div class="form-floating mb-3">
+            <input type="text" name="username" class="form-control" id="floatingInput" placeholder="dreamwastaken">
+            <label for="floatingInput"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+            </svg> Username</label>
+          </div>
+ 
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Check</button>
+          <hr class="my-4">
+          <small class="text-body-secondary">Check to know whether profile is fake or not</small>
+        </form>
+      </div>
+    </div>
+  </div>
+    </section>
+    <section class="second">
+      <div class="container2">
+        <div class="grid-item1">
+            <h3 class="display-5 fw-bold lh-1 text-body-emphasis mb-3">About</h3>
+            <p>This Website assists you by finding out the fake profile user and it helps you detect if the profile is malicious or not.</p>
+        </div>
+ 
+        <div class="grid-item2">
+            <h3 class="display-5 fw-bold lh-1 text-body-emphasis mb-3">Why are we detecting?</h3>
+            <p>Avoids Risk for theft, Breaching into personal info. Fake URL link access by consumers will be stopped. Online harrassment can be reported.</p>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+        <footer class="py-3 my-4">
+          <hr/>
+          <p class="text-center text-body-secondary" style="font-size: 20px;">© 2023 SkipScam, Inc</p>
+        </footer>
+      </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    {%endblock%}
+</html>
